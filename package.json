@@ -4,7 +4,8 @@
   "description": "client project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -14,10 +15,6 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/osisamkay/Client-Project/issues"
-  },
-  "scripts": {
-    "start": "webpack-dev-server --mode development --open",
-    "build": "webpack --mode production"
   },
   "dependencies": {
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
