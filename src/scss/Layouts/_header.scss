@@ -1,0 +1,48 @@
+@import "./../base/_variables";
+.top{
+  display:grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+  padding:20px 120px;
+  background-color: $primary-color;
+  h3{
+    color:white;
+  }
+  .social ul{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: right;
+    li{
+      list-style-type: none;
+      &:hover{
+       transform: scale(1.5);
+       transition: 500ms;
+      }
+      i{
+        color:white;
+      }
+    }
+  }
+}
+
+nav{
+  display:grid !important;
+  grid-template-columns: 3fr 1fr;
+  padding: 20px 120px;
+  ul{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    li{
+      list-style-type:none;
+      button{
+        width: 85px;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+        background-color: $primary-color;
+        box-shadow: 0px 3px 6px rgba(0,0,0,.6);
+        color:$color5;
+      }
+    }
+  }
+}
