@@ -98,6 +98,14 @@ button {
 
 /* nav ends */
 
+/* bg-image */
+.bgimage{
+  background-image: url('../../assets/header.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
 /* header ends */
 
 
