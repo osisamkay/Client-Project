@@ -124,6 +124,7 @@ nav ul li a {
   font-size: 25px;
   font-weight: 900;
   text-decoration: none;
+  color: #1b8cfd;
 }
 
 nav ul button {
@@ -136,6 +137,7 @@ nav ul button {
   font-weight: 900;
   -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.6);
           box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
@@ -242,6 +244,122 @@ nav ul button {
   }
   .bgimage .headerQoute h1, .bgimage .headerQoute p, .bgimage .headerQoute .headerButton {
     text-align: left;
+  }
+}
+
+.service {
+  padding: 120px 0px;
+}
+
+.service .servLeft .servCard {
+  width: 270px;
+  height: 245px;
+  margin: 0px auto;
+  background: linear-gradient(45deg, #0682ff 0%, #3aa3ff 100%);
+  -webkit-box-shadow: 0px 6px 20px rgba(27, 140, 253, 0.5);
+          box-shadow: 0px 6px 20px rgba(27, 140, 253, 0.5);
+  margin-bottom: 25px;
+}
+
+.service .servLeft .servCard:nth-child(even) {
+  background: white;
+}
+
+.service .servLeft .servCard:nth-child(even) h3, .service .servLeft .servCard:nth-child(even) p {
+  color: #1b8cfd;
+}
+
+.service .servLeft .img {
+  text-align: center;
+}
+
+.service .servLeft .img img {
+  padding: 20px;
+}
+
+.service .servLeft .img h3 {
+  font-size: 25px;
+  color: white;
+  padding: 15px;
+}
+
+.service .servLeft .img p {
+  font-size: 16px;
+  color: white;
+  padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .service .servLeft {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+.service .servRight {
+  width: 90%;
+  margin: 0px auto;
+}
+
+.service .servRight .servDetails h1 {
+  font-size: 30px;
+  color: #1E2F4F;
+  padding: 20px 0px;
+}
+
+.service .servRight .servDetails p {
+  color: #1b8cfd;
+}
+
+.service .servRight .servDetails .servBtn {
+  padding: 20px 0px;
+}
+
+.service .servRight .servDetails .servBtn input {
+  height: 40px;
+  width: 120px;
+  background-color: transparent;
+  border: 1px solid #1b8cfd;
+  color: #1b8cfd;
+  border-radius: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .service {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 90%;
+    margin: 0px auto;
+  }
+  .service .servLeft .servCard {
+    margin: 0px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .service {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    width: 1194px;
+    margin: 0px auto;
+  }
+  .service .servLeft {
+    width: 540px;
+  }
+  .service .servRight {
+    width: 398px;
+  }
+  .service .servRight h1 {
+    font-size: 50px;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -97,6 +97,7 @@ nav {
                 font-size: 25px;
                 font-weight: 900;
                 text-decoration: none;
+                color:  #1b8cfd;
             }
         }
         button {
@@ -108,6 +109,7 @@ nav {
             border: none;
             font-weight: 900;
             box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.6);
+            cursor: pointer;
         }
     }
     @media screen and (min-width: 768px) {
@@ -200,4 +202,100 @@ nav {
           }
         }
     }
+}
+
+.service{
+  padding: 120px 0px;
+  .servLeft{
+    .servCard{
+      width: 270px;
+      height:245px;
+      margin: 0px auto;
+      background: linear-gradient(45deg, rgba(6,130,255,1) 0%, rgba(58,163,255,1) 100%);
+      box-shadow: 0px 6px 20px rgba(27,140,253,0.5);
+      margin-bottom: 25px;
+      // border: 1px solid black;
+      &:nth-child(even){
+        background: white;
+        h3,p{
+          color: #1b8cfd;
+        }
+        
+      }
+      
+    }
+    .img{
+      text-align: center;
+      img{
+        padding: 20px;
+      }
+      h3{
+        font-size: 25px;
+        color: white;
+        padding: 15px;
+      }
+      p{
+        font-size: 16px;
+        color: white;
+        padding:10px;
+      }
+    }
+    @media screen and (min-width:768px) {
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      
+    }
+    
+  }
+  .servRight{
+    width: 90%;
+    margin: 0px auto;
+    .servDetails{
+      h1{
+        font-size: 30px;
+        color:$color2;
+        padding: 20px 0px;
+      }
+      p{
+        color:$primary-color;
+      }
+      .servBtn{
+        padding: 20px 0px;
+        input{
+          height: 40px;
+          width: 120px;
+          background-color: transparent;
+          border: 1px solid $primary-color;
+          color: $primary-color;
+          border-radius: 20px;
+      }
+      }
+      
+    }
+  }
+  @media screen and (min-width:1024px) {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 90%;
+    margin: 0px auto;
+    .servLeft .servCard{
+      margin: 0px
+    }
+  }
+  @media screen and (min-width:1440px) {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    width: 1194px;
+    margin: 0px auto;
+    .servLeft{
+      width: 540px;
+    }
+    .servRight{
+      width:398px;
+      h1{
+        font-size: 50px;
+      }
+    }
+  }
 }
