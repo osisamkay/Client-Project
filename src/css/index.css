@@ -1,21 +1,12 @@
 @import'./variables.css';
 
-body{
-  padding:0px;
-  margin:0px;
-}
+
 
 
 /* header starts */
 
-.top{
-  background-color: var(--primary-color);
-  color:white;
-}
-.top h3{
-  margin:0px;
-  font-size:15px;
-}
+
+.top 
 .estimate {
   width: 90%;
   margin: 0px auto;
@@ -44,7 +35,7 @@ body{
 nav{
   width: 100%;
   margin: 0px auto;
-  position: fixed;
+  padding:20px 0px;
 }
 .logo{
   padding:20px;

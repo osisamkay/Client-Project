@@ -1,0 +1,203 @@
+@import'./variables.scss';
+@import url('https://fonts.googleapis.com/css?family=Muli|Roboto');
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-family: 'Muli', sans-serif;
+}
+
+/* header starts */
+
+.top {
+    background-color: $primary-color;
+    color: white;
+    h3 {
+        margin: 0px;
+        font-size: 15px;
+    }
+    .estimate {
+        width: 90%;
+        margin: 0px auto;
+        text-align: center;
+        padding: 20px 0px;
+    }
+    .social ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        cursor: pointer;
+        padding: 20px 0px;
+        margin: 0px;
+        li {
+            list-style-type: none;
+            &:hover {
+                transform: scale(1.5);
+                transition: 500ms;
+            }
+        }
+    }
+    @media screen and (min-width: 768px) {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        padding: 20px 30px;
+        .estimate {
+            width: 100%;
+            text-align: left;
+        }
+        .social ul {
+            justify-items: right;
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        padding: 20px 120px;
+        h3 {
+            font-size: 1.17em;
+        }
+    }
+}
+
+/* nav */
+
+nav {
+    width: 100%;
+    margin: 0px auto;
+    .logo {
+        padding: 20px;
+        h2 {
+            display: inline-block;
+            margin: 0px;
+        }
+        .imge {
+            float: right;
+            img {
+                width: 30px;
+                height: 30px;
+                float: right;
+            }
+        }
+    }
+    .navlink {
+        display: none
+    }
+    .navlinkshow {
+        display: block;
+        transition: 500ms;
+    }
+    ul {
+        padding: 0px;
+        text-align: center;
+        li {
+            padding-bottom: 20px;
+            list-style-type: none;
+            a {
+                font-size: 25px;
+                font-weight: 900;
+                text-decoration: none;
+            }
+        }
+        button {
+            width: 76px;
+            height: 35px;
+            background-color: #1b8cfd;
+            color: $color5;
+            border-radius: 5px;
+            border: none;
+            font-weight: 900;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.6);
+        }
+    }
+    @media screen and (min-width: 768px) {
+        .navlink {
+            display: block;
+        }
+        .imge {
+            display: none;
+        }
+        .logo {
+            padding: 0px;
+        }
+        .naval {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            padding: 20px 30px;
+        }
+        .navlink {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: center;
+            justify-items: right;
+            li {
+              padding: 0px;
+          }
+        }
+        
+    }
+    @media screen and (min-width: 1024px) {
+        .naval {
+            padding: 20px 120px;
+        }
+    }
+}
+
+/* nav ends */
+
+/* bg-image */
+
+.bgimage {
+    background-image: url('../../assets/header.png');
+    background-position: center;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    height: 600px;
+    .headerQoute {
+        width: 90%;
+        margin: 0px auto;
+        border-radius: 10px;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.6);
+        position: relative;
+        top: 20%;
+        h1 {
+            margin: 0px;
+            font-size: 44px;
+            line-height: 40px;
+            font-weight: 900;
+            color: $color2;
+            text-align: center;
+            padding: 20px;
+        }
+        p {
+            padding: 0px 20px 20px 20px;
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
+        }
+        .headerButton {
+            text-align: center;
+            padding: 20px;
+            input[type="button"] {
+                height: 40px;
+                width: 160px;
+                padding: 7px;
+                border: none;
+                color: $color5;
+                background-color: $primary-color;
+                border-radius: 5px;
+                font-size: 16px;
+                cursor: pointer;
+                box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.6);
+            }
+        }
+        @media screen and (min-width: 1024px){
+          width: 450px;
+          margin: 0px 120px;
+          h1,p,.headerButton{
+            text-align: left;
+          }
+        }
+    }
+}
