@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <title>Docu</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./scss/main.css">
 </head>
 
@@ -26,7 +27,7 @@
         </ul>
       </div>
     </div>
-    <nav>
+    <nav class="nav">
       <div class="naval">
         <div class="logo">
           <h2>Clany</h2>
@@ -42,7 +43,7 @@
       </div>
     </nav>
     <div class="bgimage">
-      <div class="headerQoute">
+      <div class="headerQoute" data-aos="fade-right">
         <h1>The Best Agency For Your Spring Cleaning Services </h1>
         <p>Spring cleaning? Dont panic, we can take care of all your cleaning requirements</p>
         <div class="headerButton">
@@ -53,7 +54,7 @@
   </header>
 
   <section class="service">
-    <div class="servLeft">
+    <div class="servLeft"  data-aos="flip-left">
       <div class="servCard residential">
         <div class="img">
           <img src="./assets/village.png" alt="residential" srcset="">
@@ -131,7 +132,7 @@
   <section class="feedbacks">
     <h1>What Our Client Say</h1>
     <div class="client-grid">
-      <div class="clients">
+      <div class="clients"data-aos="zoom-in-left">
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
           industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
           scrambled it to make a type specimen book. </p>
@@ -142,7 +143,7 @@
           </span>
         </div>
       </div>
-      <div class="clients">
+      <div class="clients" data-aos="zoom-in-right">
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
           industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
           scrambled it to make a type specimen book. </p>
@@ -201,6 +202,7 @@
     </div>
   </footer>
   <script src="./src/index.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 </html>
