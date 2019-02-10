@@ -205,9 +205,7 @@ nav {
     }
 }
 
-
 // service section start
-
 .service {
     padding: 120px 0px;
     .servLeft {
@@ -299,11 +297,9 @@ nav {
         }
     }
 }
+
 // service section ends
-
-
 // Why us section start
-
 section.whyUs {
     width: 90%;
     margin: 0px auto;
@@ -340,9 +336,7 @@ section.whyUs {
 }
 
 // Why us section ends
-
 // Feedback section start
-
 .feedbacks {
     width: 90%;
     margin: 0px auto;
@@ -353,11 +347,10 @@ section.whyUs {
         padding: 20px;
         color: $color2;
     }
-    
     .clients {
-      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.6);
-      margin-bottom: 20px;
-      border-radius: 10px;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.6);
+        margin-bottom: 20px;
+        border-radius: 10px;
         p {
             padding: 20px;
         }
@@ -365,10 +358,9 @@ section.whyUs {
             display: grid;
             grid-template-columns: 1fr 2fr;
             align-items: center;
-            padding:0px 0px 20px 20px;
+            padding: 0px 0px 20px 20px;
             justify-items: center;
             width: 250px;
-          
             span {
                 h5 {
                     font-size: 21px;
@@ -378,14 +370,68 @@ section.whyUs {
         }
     }
     @media screen and (min-width:1024px) {
-      .client-grid{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap:20px;
-        width:950px;
-        margin:0px auto;
-        padding: 50px 0px;
+        .client-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+            width: 950px;
+            margin: 0px auto;
+            padding: 50px 0px;
+        }
+    }
+}
+
+// Feedback section ends
+// footer starts
+footer {
+    color: $color5;
+    background-color: $color2;
+    .footer-content {
+      background-image: url('./../assets/Intersection\ 1.png');
+      background-repeat: no-repeat;
+      background-position: center;
+        .footerGroup.first {
+            width: 250px;
+            margin: 0px auto;
+            p {
+                padding: 20px 0px;
+            }
+            .social ul {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                align-items: center;
+                justify-items: center;
+                li {
+                    list-style-type: none;
+                    padding: 20px;
+                }
+            }
+        }
+    }
+    .footerGroup {
+        width: 250px;
+        margin: 0px auto;
+        padding: 30px 0px;
+        h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        ul li {
+            font-size: 16px;
+            list-style-type: none;
+            padding: 10px 0px;
+        }
+    }
+    @media screen and (min-width:768px){
+      .footer-content{
+        display:grid;
+        grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+      }
+    }
+    @media screen and (min-width:1440px){
+      .footer-content{
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
       }
     }
 }
-// Feedback section ends
