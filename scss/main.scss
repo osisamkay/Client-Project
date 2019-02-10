@@ -61,7 +61,9 @@ p {
 }
 
 /* nav */
-
+.navscroll{
+  position:fixed;
+}
 nav {
     width: 100%;
     margin: 0px auto;
