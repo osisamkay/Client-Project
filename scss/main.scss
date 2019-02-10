@@ -97,7 +97,7 @@ nav {
                 font-size: 25px;
                 font-weight: 900;
                 text-decoration: none;
-                color:  #1b8cfd;
+                color: #1b8cfd;
             }
         }
         button {
@@ -134,10 +134,9 @@ nav {
             align-items: center;
             justify-items: right;
             li {
-              padding: 0px;
-          }
+                padding: 0px;
+            }
         }
-        
     }
     @media screen and (min-width: 1024px) {
         .naval {
@@ -194,108 +193,140 @@ nav {
                 box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.6);
             }
         }
-        @media screen and (min-width: 1024px){
-          width: 450px;
-          margin: 0px 120px;
-          h1,p,.headerButton{
-            text-align: left;
-          }
+        @media screen and (min-width: 1024px) {
+            width: 450px;
+            margin: 0px 120px;
+            h1,
+            p,
+            .headerButton {
+                text-align: left;
+            }
         }
     }
 }
 
-.service{
-  padding: 120px 0px;
-  .servLeft{
-    .servCard{
-      width: 270px;
-      height:245px;
-      margin: 0px auto;
-      background: linear-gradient(45deg, rgba(6,130,255,1) 0%, rgba(58,163,255,1) 100%);
-      box-shadow: 0px 6px 20px rgba(27,140,253,0.5);
-      margin-bottom: 25px;
-      // border: 1px solid black;
-      &:nth-child(even){
-        background: white;
-        h3,p{
-          color: #1b8cfd;
+.service {
+    padding: 120px 0px;
+    .servLeft {
+        .servCard {
+            width: 270px;
+            height: 245px;
+            margin: 0px auto;
+            background: linear-gradient(45deg, rgba(6, 130, 255, 1) 0%, rgba(58, 163, 255, 1) 100%);
+            box-shadow: 0px 6px 20px rgba(27, 140, 253, 0.5);
+            margin-bottom: 25px; // border: 1px solid black;
+            &:nth-child(even) {
+                background: white;
+                h3,
+                p {
+                    color: #1b8cfd;
+                }
+            }
         }
-        
-      }
-      
+        .img {
+            text-align: center;
+            img {
+                padding: 20px;
+            }
+            h3 {
+                font-size: 25px;
+                color: white;
+                padding: 15px;
+            }
+            p {
+                font-size: 16px;
+                color: white;
+                padding: 10px;
+            }
+        }
+        @media screen and (min-width:768px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
     }
-    .img{
-      text-align: center;
-      img{
-        padding: 20px;
-      }
-      h3{
-        font-size: 25px;
-        color: white;
-        padding: 15px;
-      }
-      p{
-        font-size: 16px;
-        color: white;
-        padding:10px;
-      }
+    .servRight {
+        width: 90%;
+        margin: 0px auto;
+        .servDetails {
+            h1 {
+                font-size: 30px;
+                color: $color2;
+                padding: 20px 0px;
+            }
+            p {
+                color: $primary-color;
+            }
+            .servBtn {
+                padding: 20px 0px;
+                input {
+                    height: 40px;
+                    width: 120px;
+                    background-color: transparent;
+                    border: 1px solid $primary-color;
+                    color: $primary-color;
+                    border-radius: 20px;
+                    cursor: pointer;
+                }
+            }
+        }
     }
-    @media screen and (min-width:768px) {
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      
+    @media screen and (min-width:1024px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        width: 90%;
+        margin: 0px auto;
+        .servLeft .servCard {
+            margin: 0px
+        }
     }
-    
-  }
-  .servRight{
+    @media screen and (min-width:1440px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 1194px;
+        margin: 0px auto;
+        .servLeft {
+            width: 540px;
+        }
+        .servRight {
+            width: 398px;
+            h1 {
+                font-size: 50px;
+            }
+        }
+    }
+}
+
+section.whyUs {
     width: 90%;
     margin: 0px auto;
-    .servDetails{
-      h1{
-        font-size: 30px;
-        color:$color2;
-        padding: 20px 0px;
-      }
-      p{
-        color:$primary-color;
-      }
-      .servBtn{
-        padding: 20px 0px;
-        input{
-          height: 40px;
-          width: 120px;
-          background-color: transparent;
-          border: 1px solid $primary-color;
-          color: $primary-color;
-          border-radius: 20px;
-      }
-      }
-      
+    h1 {
+        font-size: 40px;
+        font-weight: 900;
+        text-align: center;
     }
-  }
-  @media screen and (min-width:1024px) {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    width: 90%;
-    margin: 0px auto;
-    .servLeft .servCard{
-      margin: 0px
+    .reason {
+        padding: 60px 0px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+        .why {
+            text-align: center;
+            width: 257px;
+            height: 228px;
+            margin: 0px auto;
+            margin-bottom: 20px;
+            color: $color2;
+            h4 {
+                font-size: 30px;
+            }
+            h3 {
+                font-size: 25px;
+                font-weight: 200;
+            }
+        }
+        @media screen and (min-width:1440px) {
+          display: grid;
+          grid-template-columns: repeat(4,1fr);
+        }
     }
-  }
-  @media screen and (min-width:1440px) {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    width: 1194px;
-    margin: 0px auto;
-    .servLeft{
-      width: 540px;
-    }
-    .servRight{
-      width:398px;
-      h1{
-        font-size: 50px;
-      }
-    }
-  }
 }
