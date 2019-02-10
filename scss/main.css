@@ -242,7 +242,9 @@ nav ul button {
     width: 450px;
     margin: 0px 120px;
   }
-  .bgimage .headerQoute h1, .bgimage .headerQoute p, .bgimage .headerQoute .headerButton {
+  .bgimage .headerQoute h1,
+  .bgimage .headerQoute p,
+  .bgimage .headerQoute .headerButton {
     text-align: left;
   }
 }
@@ -265,7 +267,8 @@ nav ul button {
   background: white;
 }
 
-.service .servLeft .servCard:nth-child(even) h3, .service .servLeft .servCard:nth-child(even) p {
+.service .servLeft .servCard:nth-child(even) h3,
+.service .servLeft .servCard:nth-child(even) p {
   color: #1b8cfd;
 }
 
@@ -324,6 +327,7 @@ nav ul button {
   border: 1px solid #1b8cfd;
   color: #1b8cfd;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1024px) {
@@ -360,6 +364,52 @@ nav ul button {
   }
   .service .servRight h1 {
     font-size: 50px;
+  }
+}
+
+section.whyUs {
+  width: 90%;
+  margin: 0px auto;
+}
+
+section.whyUs h1 {
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+}
+
+section.whyUs .reason {
+  padding: 60px 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+section.whyUs .reason .why {
+  text-align: center;
+  width: 257px;
+  height: 228px;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  color: #1E2F4F;
+}
+
+section.whyUs .reason .why h4 {
+  font-size: 30px;
+}
+
+section.whyUs .reason .why h3 {
+  font-size: 25px;
+  font-weight: 200;
+}
+
+@media screen and (min-width: 1440px) {
+  section.whyUs .reason {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
   }
 }
 /*# sourceMappingURL=main.css.map */
