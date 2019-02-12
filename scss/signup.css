@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css?family=Muli|Roboto");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+/*Nav starts */
+nav {
+  width: 100%;
+  margin: 0px auto;
+}
+
+nav .logo {
+  padding: 20px;
+}
+
+nav .logo h2 {
+  display: inline-block;
+  margin: 0px;
+}
+
+nav .navlink {
+  display: none;
+}
+
+nav .navlinkshow {
+  display: block;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+nav ul {
+  padding: 0px;
+  text-align: center;
+}
+
+nav ul li {
+  padding-bottom: 20px;
+  list-style-type: none;
+}
+
+nav ul li .nav-link {
+  font-size: 15px;
+  font-weight: 100;
+  color: #f2f2f2;
+}
+
+nav ul li p {
+  font-size: 25px;
+  color: #f2f2f2;
+}
+
+nav ul button {
+  width: 76px;
+  height: 35px;
+  background-color: #1b8cfd;
+  color: #DDE3EC;
+  border-radius: 5px;
+  border: none;
+  font-weight: 900;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  nav .navlink {
+    display: block;
+  }
+  nav .logo {
+    padding: 0px;
+    color: #f2f2f2;
+  }
+  nav .naval {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px 30px;
+    background-color: #1b8cfd;
+  }
+  nav .navlink {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: right;
+  }
+  nav .navlink a .nav-link:hover {
+    text-decoration: underline;
+  }
+  nav .navlink li {
+    padding: 0px;
+  }
+  nav .navlink p {
+    padding: 0px;
+    margin: 0px -85px 0px 0px;
+    color: #f2f2f2;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  nav .naval {
+    padding: 10px 120px;
+  }
+  nav .navlink p {
+    margin: 0px -125px 0px 0px;
+  }
+}
+
+/* nav ends */
+/* form starts*/
+.signup-form {
+  position: relative;
+  max-width: 365px;
+  margin: 70px auto 100px;
+  padding: 45px 65px 45px 45px;
+  text-align: center;
+  -webkit-box-shadow: 0 1px 6px rgba(57, 73, 76, 0.35);
+          box-shadow: 0 1px 6px rgba(57, 73, 76, 0.35);
+  background: #ffffff;
+}
+
+.signup-form h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.signup-form .loginhere-message {
+  color: #b3b3b3;
+}
+
+.signup-form .loginhere-message .loginhere-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.signup-form .label-agree-term {
+  color: #b3b3b3;
+}
+
+.signup-form .label-agree-term .term-service {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.signup-form .form-submit {
+  font-family: inherit;
+  background: #1b8cfd;
+  width: 25%;
+  border: 0;
+  border-radius: 5px;
+  padding: 15px 0px 15px 0px;
+  margin: 15px 0px 5px 0px;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form-input {
+  font-family: inherit;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  font-size: 14px;
+}
+
+.form-group-name {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 45px;
+}
+/*# sourceMappingURL=signup.css.map */
