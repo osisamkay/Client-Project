@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Muli|Roboto");
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 /*Nav starts */
+* {
+  padding: 0;
+  margin: 0;
+}
+
 nav {
   width: 100%;
-  margin: 0px auto;
 }
 
 nav .logo {
@@ -15,8 +19,14 @@ nav .logo h2 {
   margin: 0px;
 }
 
+nav .logo h2 a {
+  text-decoration: none;
+  color: #1b8cfd;
+  cursor: pointer;
+}
+
 nav .navlink {
-  display: none;
+  display: inline;
 }
 
 nav .navlinkshow {
@@ -38,7 +48,9 @@ nav ul li {
 nav ul li .nav-link {
   font-size: 15px;
   font-weight: 100;
-  color: #f2f2f2;
+  color: #1b8cfd;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 nav ul li p {
@@ -63,10 +75,6 @@ nav ul button {
   nav .navlink {
     display: block;
   }
-  nav .logo {
-    padding: 0px;
-    color: #f2f2f2;
-  }
   nav .naval {
     display: -ms-grid;
     display: grid;
@@ -77,6 +85,15 @@ nav ul button {
             align-items: center;
     padding: 20px 30px;
     background-color: #1b8cfd;
+  }
+  nav .naval .logo {
+    padding: 0px;
+    color: #f2f2f2;
+  }
+  nav .naval .logo h2 a {
+    text-decoration: none;
+    color: #DDE3EC;
+    cursor: pointer;
   }
   nav .navlink {
     display: -ms-grid;
@@ -103,7 +120,7 @@ nav ul button {
 
 @media screen and (min-width: 1024px) {
   nav .naval {
-    padding: 10px 120px;
+    padding: 20px 120px;
   }
   nav .navlink p {
     margin: 0px -125px 0px 0px;

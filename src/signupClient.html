@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="/scss/signup.css">
+  <title>Signup</title>
+</head>
+<body>
+    <header>
+      <nav>
+        <div class="naval">
+          <div class="logo">
+            <h2><a href="/index.html">Clany</a></h2>
+          </div>
+          <ul class="navlink">
+            <!-- <li><a href="#">About</a></li>
+            <li><a href="./src/signup.html"><button>Sign up</button></a></li> -->
+            <p class="nav-prompt">Already have an account?</p>
+            <li><a class="nav-link" href="./src/login.html">Log In</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="main">
+      <section class="signup">
+        <div class="container">
+          <div class="signup-content">
+            <form method="POST" class="signup-form">
+              <h2 class="form-title">Create account</h2>
+              <div class="form-group-name">
+                <input type="text" class="form-input" id="first-name" placeholder="Firstname">
+                <input type="text" class="form-input" id="last-name" placeholder="Lastname">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-input" id="email" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-input" id="password" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-input" id="re-password" placeholder="Repeat password">
+              </div>
+              <div class="form-group">
+                <input type="checkbox" class="agree-term" id="agree-term">
+                <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree to all statements in <a href="#" class="term-service">Terms of service</a></label>
+              </div>
+              <div class="form-group">
+                <input type="submit" class="form-submit" id="submit" value="Sign up">
+              </div>
+              <p class="loginhere-message">Have an account already? <a href="#" class="loginhere-link">Login here</a></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+</body>
+<script src="/src/signup.js"></script>
+</html>
