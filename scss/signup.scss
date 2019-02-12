@@ -2,18 +2,27 @@
 @import url('https://fonts.googleapis.com/css?family=Muli|Roboto');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 /*Nav starts */
+*{
+  padding: 0;
+  margin: 0;
+}
 nav {
   width: 100%;
-  margin: 0px auto;
   .logo {
       padding: 20px;
       h2 {
           display: inline-block;
           margin: 0px;
+          a{
+            text-decoration: none;
+            color: $primary-color;
+            cursor: pointer;
+          }
       }
   }
   .navlink {
-      display: none
+      display: inline;
+    
   }
   .navlinkshow {
       display: block;
@@ -28,7 +37,9 @@ nav {
           .nav-link {
               font-size: 15px;
               font-weight: 100;
-              color: $color6;
+              color: $primary-color;
+              text-decoration: none;
+              cursor: pointer;
           }
         
           p {
@@ -53,16 +64,24 @@ nav {
           display: block;
       }
     
-      .logo {
-          padding: 0px;
-          color: $color6;
-      }
+      
       .naval {
           display: grid;
           grid-template-columns: 1fr 1fr;
           align-items: center;
           padding: 20px 30px;
           background-color: $primary-color;
+          .logo {
+            padding: 0px;
+            color: $color6;
+            h2{
+              a{
+                text-decoration: none;
+                color: $color5;
+                cursor: pointer;
+              }
+            }
+        }
       }
       .navlink {
           display: grid;
@@ -84,7 +103,7 @@ nav {
   }
   @media screen and (min-width: 1024px) {
       .naval {
-          padding: 10px 120px;
+          padding: 20px 120px;
       }
       .navlink{
         p{
